@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     //Problema: Somar os números ímpares de 1 até N
     /*
@@ -6,11 +7,18 @@
     //AQUI, USE FOR COM VARIÁVEL DE CONTROLE!!!
 
     //Entrada
-
-
+    const numero = Number(prompt(`Informe um número N`));
+    let conta = [];
+    let soma = 0;
     //Processamento
+    for (let contador = 1; contador <= numero; contador++) {
+        if (contador % 2 != 0) {
+            conta.push(contador);
+            soma += contador;
+        } 
 
+    }
 
     //Saída
-
+    document.write(`o resultado final é ${soma}`);
 </script>

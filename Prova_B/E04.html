@@ -10,11 +10,28 @@
     //AQUI, USE FOR COM VARIÁVEL DE CONTROLE!!!
 
     //Entrada
-
+    const numero = Number(prompt(`Informe um número inteiro positivo inicial!`));
+    const numeroFinal = Number(prompt(`Informe um número inteiro positivo final!!`));
+    let primo = [];
+    let primoFim = [];
 
     //Processamento
 
-
+        if (numero % 2 == 0 ) {
+            document.write(`Esse número mão é primo!`)
+        } else {
+            for (let contador = numero; contador < numeroFinal; contador++) {
+                if (numero % numero == 1 && numero % 1 == numero) {
+                  primo.push(contador)
+                } else if (numeroFinal % numeroFinal == 1 && numeroFinal % 1 == numeroFinal){
+                    primoFim.push(numeroFinal)
+                    
+                }
+                
+            }
+        }
+          
+    
     //Saída
-
+        document.write(`Os números ímpares entre ${numero} e ${numeroFinal} são: ${primo}, ${primoFim}`)
 </script>

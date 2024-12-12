@@ -7,11 +7,19 @@
     //AQUI, USE FOR...OF!
     
     //Entrada
-
+    let listaNumeros = [10, 3, 5, 7, 9, 2, 11];
+    let maior = [];
+    let menor = [];
 
     //Processamento
-
-
+    for(let item of listaNumeros){
+        if (item >= 11) {
+            maior.push(item)
+        } else if (item == 2) {
+            menor.push(item)
+        }
+    }
+   
     //Saída
-
+    document.write(`O mair valor é de ${maior} , e o menor é de ${menor}`)
 </script>

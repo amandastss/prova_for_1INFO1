@@ -8,10 +8,17 @@
     
     //Entrada
 
-
+    let lista = ['Arara', 'Para', 'Radar', 'Tomate', 'Osso', 'Ana', 'Casa', 'Ovo'];
+    let letras = [];
+    
     //Processamento
-
+    for(let item of lista){
+        if (item.length > 4) {
+          letras.push(item)
+        } 
+    }
 
     //Saída
+     document.write(`A quantidade de palavras com mais de 4 letras é de: ${letras.length}`);
 
 </script>
